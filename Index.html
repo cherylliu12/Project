@@ -1,74 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"content="HTML,CSS,JavaScript">
+    <meta name="description"content="diving spot recommendation in U.S">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="nav.css" />
 </head>
 <style>
-    p{
-    text-align:center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: olive;
+    audio{
+     margin-left: 700px;
+     margin-top:50px;
     }
-    h1{
-    text-align: center;
-    font-weight: bold;
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
     }
-
-</style>
-<body>
-        <nav>
-                <a href="Index.html">Home</a>
-                <a href="Sitemap.html">Site Map</a>
-                <a href="Top1.html">Top 1</a>
-                <a href="Top2.html">Top 2</a>
-                <a href="Top3.html">Top 3</a>
-                <a href="Top4.html">Top 4</a>
-                <a href="Top5.html">Top 5</a>
-                <a href="Contact.html">Contact</a>
-               </nav>
-    <H1>Diving in U.S</H1>
-    <hr/>
-    <p>
-    This Website will be about Top 5 diving sites in U.S territory.The objective of my website is to provide a background these diving sites, and animals specifically to these sites. This site could serve as a guide for divers interested in exploring the undersea world of America. My target audience would definitely be divers or people interested in exploring diving. The home page will introduce the author; the next pages will be the top 5 diving sites and the last will be a contact page.
-    </p>
-    <br>
-    <p>
-        About The Author:
-        A beginning diving enthusiast who obtained her PADI Open Water and Advanced Open Water certificate in Malaysia,and then traveled to Sipadan, which is thr top diving spot in Asia. Upon returning to U.S for study, the author wishes to researcha dn identify other top diving sites in the U.S to better explore the underwarter world! Since I only like diving in warm water, this website will be dedicate to diving specifically in warm water.
-    </p>
-        <img src="../Project/project images/cl diving.JPG" alt="Cheryldiving"title="Malaysia"height="200px">
-        <img src="../Project/project images/cl diving2.JPG" alt="Cheryldiving2"title="Malaysia2"height="200px">
-    <br>
-    <audio controls autoplay>
-    <source src="../Project/project images/ehrling-ocean.mp3"type="audio/mpeg">Your browser does not support the audio element.<button>Play/Pause</button>
-    </audio>
-    <table>
-        <caption>Top 5 Sites</caption>
-        <tr>
-            <td>1</td>
-            <td>Ralph's Ridge-Santa Barbara Island, California</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>HMCS Yukon - San Diego, California</td>
-        <tr>
-            <td>3</td>
-            <td>Manta Night Dive - Kona, Big Island, Hawaii</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>USS Oriskany - Pensacola, Florida</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>USCG Duane - Key Largo, Florida</td>
-        </tr>
+    th,
+    td {
+        margin: 0;
+        padding: 0;
+        color: #064273;
+        font-family: Garamond;
+        font-size: 1.5em;
+    }
+    img#img1{
+      margin-left:540px;
+      box-shadow: 0 4px 8px 0 seashell, 0 6px 20px 0 seashell;
+    }
+    img#img2{
+       margin-left: 820px;
+       box-shadow: 0 4px 8px 0 seashell, 0 6px 20px 0 seashell;
+    }
     
+    input {
+        background-color: #004670;
+        color: white ;
+        height: 40px;
+        width: 60px;
+        text-align: center;
+        border-style: none;
+    }
+    input:hover {
+        background-color: seashell;
+        color: #004670;
+    }
+    hr{
+    margin: 20px;
+    }
+    p {
+        text-align: center;
+        margin-left: 420px;
+        margin-right: 420px;
+        font-family: Garamond;
+        font-size: 1.5em;
+        color: #064273;
+    }
+    .title {
+        font-weight: bold;
+    }
+</style>
+<script>
+    function show(x) {
+        let i = document.getElementById("result");
+        let a = document.getElementById("result1");
+        let b = document.getElementById("result2");
+        let c = document.getElementById("result3");
+        let d = document.getElementById("result4");
+        if (x == "first") {
+            i.innerHTML = "Santa Barbara, CA"
+        }
+        else if (x == "second") {
+            a.innerHTML = "San Diego, California"
+        }
+        else if (x == "third") {
+            b.innerHTML = "Kona,Big Island, Hawaii"
+        }
+        else if (x == "fourth") {
+            c.innerHTML = "Pensacola, Florida"
+        }
+        else if (x == "last") {
+            d.innerHTML = " Key Largo, Florida"
+        }
+        i.style.color = "rosybrown";
+        i.style.fontFamily = "Lucida Handwriting";
+        i.style.fontSize = "0.8em";
+        a.style.color = "rosybrown";
+        a.style.fontFamily = "Lucida Handwriting";
+        a.style.fontSize = "0.8em";
+        b.style.color = "rosybrown";
+        b.style.fontFamily = "Lucida Handwriting";
+        b.style.fontSize = "0.8em";
+        c.style.color = "rosybrown";
+        c.style.fontFamily = "Lucida Handwriting";
+        c.style.fontSize = "0.8em";
+        d.style.color = "rosybrown";
+        d.style.fontFamily = "Lucida Handwriting";
+        d.style.fontSize = "0.8em";
+
+    }
+</script>
+
+<body>  
+    <h1>Diving in U.S</h1>
+    <nav>
+                    <a class="nv" href="index.html">HOME</a>
+                    <a class="nv" href="Sitemap.html">SITE MAP</a>
+                    <a class="nv" href="Top1.html">TOP 1</a>
+                    <a class="nv" href="Top2.html">TOP 2</a>
+                    <a class="nv" href="Top3.html">TOP 3</a>
+                    <a class="nv" href="Top4.html">TOP 4</a>
+                    <a class="nv" href="Top5.html">TOP 5</a>
+                    <a class="nv" href="Contact.html">CONTACT</a>
+                    <a class="nv"href="Citation.html">CITATION</a>
+    </nav>
+    <audio controls autoplay>
+            <source src="projectimages/ehrling-ocean.mp3" type="audio/mpeg">Your browser does not support the audio
+            element.<button>Play/Pause</button>
+    </audio>
+    <p style="font-weight: bold;font-style: italic;">
+        This Website will be about Top 5 diving sites in U.S territory.The objective of my website is to provide a
+        background for these diving sites, and animals specifically to these sites. This site could serve as a guide for
+        divers interested in exploring the undersea world of America. My target audience would definitely be divers or
+        people interested in exploring diving. The home page will introduce the author; the next pages will be the top 5
+        diving sites and the last will be a contact page.
+    </p>
+    <p>
+        <span class="title">About The Author:</span>
+        A beginning diving enthusiast who obtained her PADI Open Water and Advanced Open Water certificate in
+        Malaysia,and then traveled to Sipadan, which is thr top diving spot in Asia. Upon returning to U.S for study,
+        the author wishes to researcha dn identify other top diving sites in the U.S to better explore the underwarter
+        world! Since I only like diving in warm water, this website will be dedicate to diving specifically in warm
+        water.
+    </p>
+        <img id="img1" src="projectimages/cl diving.JPG" alt="Cheryldiving" title="Malaysia" height="220px">
+        <img id="img2" src="projectimages/cl diving2.JPG" alt="Cheryldiving2" title="Malaysia2" height="220px">
+    <br>
+    <hr>
+    <table>
+        <th style="color:rosybrown;font-size: 2em;font-weight: bolder;">Top 5 Sites</th>
+        <tr>
+            <td><input type="button" id="first" onclick="show(this.id)" value="1."></td>
+            <td>Ralph's Ridge-<span id="result"></span></td>
+        </tr>
+        <tr>
+            <td><input type="button" id="second" onclick="show(this.id)" value="2."></td>
+            <td>HMCS Yukon -<span id="result1"></span></td>
+        <tr>
+            <td><input type="button" id="third" onclick="show(this.id)" value="3."></td>
+            <td>Manta Night Dive - <span id="result2"></span></td>
+        </tr>
+        <tr>
+            <td><input type="button" id="fourth" onclick="show(this.id)" value="4."></td>
+            <td>USS Oriskany - <span id="result3"></span></td>
+        </tr>
+        <tr>
+            <td><input type="button" id="last" onclick="show(this.id)" value="5."></td>
+            <td>USCG Duane - <span id="result4"></span></td>
+        </tr>
+
     </table>
 
-   
+
 </body>
+
 </html>

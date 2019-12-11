@@ -1,21 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"content="HTML,CSS,JavaScript">
+    <meta name="description"content="USCG Duanne, Key Largo, Florida">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Top 5</title>
+    <link rel="stylesheet" type="text/css" href="nav.css" />
+    <style>
+        .title {
+            font-weight: bold;
+        }
+
+        p {
+            text-align: center;
+            margin-left: 420px;
+            margin-right: 420px;
+            margin-bottom:50px;
+            font-family: Garamond;
+            font-size: 1.5em;
+            color: #064273;
+        }
+        div#mouse{
+        text-align: center;
+        margin:20px;
+        }
+        h3{
+            font-family: Garamond;
+            font-size: 1.5em;
+            color: #064273;
+        }
+        div#question {
+            text-align: center;
+            font-weight: bold;
+            margin: 40px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            const names = ["1.Santa Barbara Island", "2. HMCS Yukon", "3.Manta Night Dive", "4.USS Oriskany", "5. USCG Duane"];
+            $("#tags").autocomplete({ source: names });
+            $("#tags").css("color", "rosybrown");
+        });
+
+        function enlargeImage(imageId) {
+            let i = document.getElementById(imageId);
+            let w = i.width;
+            w = w * 1.5;
+            i.width = w;
+
+            let y = document.getElementById("heading");
+            if (imageId == "old") {
+                y.innerHTML = "This is a photo of USCG returning from Vietnam in 1968";
+            }
+            else if (imageId == "new") {
+                y.innerHTML = "View from underwater";
+            }
+        }
+
+        function reduceImage(imageId) {
+            let i = document.getElementById(imageId);
+            let w = i.width;
+            w = w / 1.5;
+            i.width = w
+        }
+    </script>
 </head>
+
 <body>
-        <nav>
-                <a href="Index.html">Home</a>
-                <a href="Sitemap.html">Site Map</a>
-                <a href="Top1.html">Top 1</a>
-                <a href="Top2.html">Top 2</a>
-                <a href="Top3.html">Top 3</a>
-                <a href="Top4.html">Top 4</a>
-                <a href="Top5.html">Top 5</a>
-                <a href="Contact.html">Contact</a>
-               </nav>
+    <h1>Diving in U.S</h1>
+
+    <nav>
+        <a class="nv" href="index.html">HOME</a>
+        <a class="nv" href="Sitemap.html">SITE MAP</a>
+        <a class="nv" href="Top1.html">TOP 1</a>
+        <a class="nv" href="Top2.html">TOP 2</a>
+        <a class="nv" href="Top3.html">TOP 3</a>
+        <a class="nv" href="Top4.html">TOP 4</a>
+        <a class="nv" href="Top5.html">TOP 5</a>
+        <a class="nv" href="Contact.html">CONTACT</a>
+        <a class="nv"href="Citation.html">CITATION</a>
+    </nav>
+    
+    <hr>
+    <div id="question">
+        <label for="tags" style="color: rosybrown;font-size: 1.5em;">Your Favorite Diving Spot so far? (number 1-5)</label>
+        <input id="tags" />
+    </div>
+    <h2 style="font-family: cursive;color: rosybrown;text-align: center;">Top 5.USCG Duane - Key Largo, Florida</h2>
+
+    <div id="mouse">
+    <h3 id="heading"></h3>
+    <img onmouseover="enlargeImage(this.id)" onmouseout="reduceImage(this.id)" src="projectimages/USCGC 1968.jpg"
+        title="USCGC2" id="old" alt="old" width=300 height=250><br>
+    <img onmouseover="enlargeImage(this.id)" onmouseout="reduceImage(this.id)" src="projectimages/USCGC 2.jpg" id="new"
+        alt="two" title="USCGC2" width=300 height=250><br>
+    </div>
+    <p>   
+        <span class="title">Location</span>: Key Largo, Florida <br>
+        <span class="title">Basic Information</span>: The US Coast Guard "Duane" has the length of 327 feet and served
+        49 years before its decommission on August 1,1985. The USCG Duane was the oldest US warship at the time when it
+        was decommissioned. Then in 1987, it was sunk in the coast of Key Largo to form an artificial reef. The wreck is
+        currently sitting at a depth of around 120 feet at the deck level. The currents around the wreck can be quite
+        strong from season to season, and this wreck dive falls into the advanced category which is not the best for new
+        divers. Moreover, USCG Duane is much smaller compared to other ship wreck, and this allows divers to explore the
+        entire ship in a single dive. <br>
+        <span class="title">Marine life</span>: coral, barracuda, turtle, eels and grey nurse sharks <br>
+        <span class="title">Difficulty</span>: Advanced Open Water <br>
+    </p>
+
 </body>
+
 </html>

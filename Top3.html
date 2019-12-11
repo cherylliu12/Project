@@ -1,21 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"content="HTML,CSS,JavaScript">
+    <meta name="description"content="Kona, Big Island">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Top 3</title>
+    <link rel="stylesheet" type="text/css" href="nav.css" />
+    <style>
+        .title {
+            font-weight: bold;
+        }
+        div{
+        text-align: center;
+        }
+        ul {
+            padding: 0;
+        }
+
+        div#par2 {
+            text-align: center;
+            margin-left: 420px;
+            margin-right: 420px;
+            margin-bottom:50px;
+            font-family: Garamond;
+            font-size: 1.5em;
+            color: #064273;
+        }
+
+        p {
+            text-align: center;
+            margin-left: 420px;
+            margin-right: 420px;
+            font-family: Garamond;
+            font-size: 1.5em;
+            color: #064273;
+        }
+    </style>
+    <script>
+        function three(imageId) {
+            let i = document.getElementById("imageId");
+            let a = document.getElementById("manta");
+            let b = document.getElementById("manta1");
+            let c = document.getElementById("manta2");
+            if (imageId == "first") {
+                a.style.fontSize = "1.5em";
+                a.style.fontFamily = "cursive";
+                a.style.color = "cadetblue";
+            }
+            else if (imageId == "second") {
+                b.style.fontSize = "1.5em";
+                b.style.fontFamily = "cursive";
+                b.style.color = "cadetblue";
+            }
+            else if (imageId == "third") {
+                c.style.fontSize = "1.5em";
+                c.style.fontFamily = "cursive";
+                c.style.color = "cadetblue";
+            }
+        }
+
+    </script>
 </head>
+
 <body>
-        <nav>
-                <a href="Index.html">Home</a>
-                <a href="Sitemap.html">Site Map</a>
-                <a href="Top1.html">Top 1</a>
-                <a href="Top2.html">Top 2</a>
-                <a href="Top3.html">Top 3</a>
-                <a href="Top4.html">Top 4</a>
-                <a href="Top5.html">Top 5</a>
-                <a href="Contact.html">Contact</a>
-               </nav>
+    <h1>Diving in U.S</h1>
+    <nav>
+        <a class="nv" href="index.html">HOME</a>
+        <a class="nv" href="Sitemap.html">SITE MAP</a>
+        <a class="nv" href="Top1.html">TOP 1</a>
+        <a class="nv" href="Top2.html">TOP 2</a>
+        <a class="nv" href="Top3.html">TOP 3</a>
+        <a class="nv" href="Top4.html">TOP 4</a>
+        <a class="nv" href="Top5.html">TOP 5</a>
+        <a class="nv" href="Contact.html">CONTACT</a>
+        <a class="nv"href="Citation.html">CITATION</a>
+    </nav>
+    <hr>
+    <h2 style="font-family: cursive;color: rosybrown;text-align: center;">Top 3. Manta Night Dive - Kona, Big Island,
+        Hawaii</h2>
+    <p>
+        <span class="title">Location</span>: Kona which is West coast of the Big Island, Hawaii <br>
+        <div>
+            <ul>
+                <li id="manta">Manta Village (South of Kona) </li>
+                <img onclick=three(this.id) src="projectimages/manta-village.jpeg" id="first" alt="village" title="sk"
+                    width=300px height=150px>
+
+                <li id="manta1">Menta Heaven (North of Kona) </li>
+                <img onclick=three(this.id) src="projectimages/manta-heaven.jpg" id="second" alt="heaven" title="kona"
+                    width=300px height=150px>
+
+                <li id="manta2">Kohala Coast (Near Waikoloa) </li>
+                <img onclick=three(this.id) src="projectimages/kohala.jpg" id="third" alt="coast" title="kohala"
+                    width=300px height=150px>
+
+            </ul>
+        </div>
+        <hr>
+        <div id="par2">
+            <img src="projectimages/menta.jpg" alt="nightdive" title="mt" height="300"width="400"><br>
+            <span class="title">Basic information</span>:
+            The manta rays in Hawaiian waters are from the Mobula alfredi species, which is the second largest species
+            of
+            manta in the whole world. The average of manta rays one will be able to see around Kona is about 12 ft. <br>
+            The Manta ray night dive is a unique experience for the Kong Coast and also one of the top night dives in
+            the
+            world. At night, divers will be able to swim with Manta Rays which feed on microscopic plankton attracted to
+            diver's light. This is also why night dives are called "Dinner Time" for Manta rays. You will also get a
+            chance
+            to come close with these creatures during your dive, and they can come as close to you as a nose-length!
+            <br>
+            <span class="title">Visibility:</span> Average 30 meters in Kona Island but less during night time <br>
+            <span class="title">Diving difficulty (add stars graphics)</span>: open water certificate required
+        </div>
+    </p>
 </body>
+
 </html>

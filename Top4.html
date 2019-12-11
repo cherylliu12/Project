@@ -1,21 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"content="HTML,CSS,JavaScript">
+    <meta name="description"content="USS Oriskanny, Florida">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Top 4</title>
+    <link rel="stylesheet" type="text/css" href="nav.css" />
+    <script>
+        const slides = ["projectimages/USS1.jpg", "projectimages/USS2.jpg", "projectimages/uss3.jpg", "projectimages/USS4.jpg", "projectimages/USS5.jpg"];
+        let i = 0;
+
+        function slideShow() {
+            let shipImg = document.getElementById("ship");
+            if (i == slides.length) {
+                i = 0;
+            }
+            shipImg.src = slides[i];
+            i = i + 1;
+
+            setTimeout("slideShow()", 1500);
+        }
+    </script>
+
+    <style>
+        .title {
+            font-weight: bold;
+        }
+
+        p#ss {
+            text-align: center;
+        }
+
+        div {
+            text-align: center;
+            margin-left: 420px;
+            margin-right: 420px;
+            margin-bottom: 50px;
+            font-family: Garamond;
+            font-size: 1.5em;
+            color: #064273;
+        }
+        img{
+            margin:25px;
+        }
+    </style>
 </head>
-<body>
-        <nav>
-                <a href="Index.html">Home</a>
-                <a href="Sitemap.html">Site Map</a>
-                <a href="Top1.html">Top 1</a>
-                <a href="Top2.html">Top 2</a>
-                <a href="Top3.html">Top 3</a>
-                <a href="Top4.html">Top 4</a>
-                <a href="Top5.html">Top 5</a>
-                <a href="Contact.html">Contact</a>
-               </nav>
+
+<body onload="slideShow()">
+    <h1>Diving in U.S</h1>
+    <nav>
+        <a class="nv" href="index.html">HOME</a>
+        <a class="nv" href="Sitemap.html">SITE MAP</a>
+        <a class="nv" href="Top1.html">TOP 1</a>
+        <a class="nv" href="Top2.html">TOP 2</a>
+        <a class="nv" href="Top3.html">TOP 3</a>
+        <a class="nv" href="Top4.html">TOP 4</a>
+        <a class="nv" href="Top5.html">TOP 5</a>
+        <a class="nv" href="Contact.html">CONTACT</a>
+        <a class="nv" href="Citation.html">CITATION</a>
+    </nav>
+    <hr>
+    <h2 style="font-family: cursive;color: rosybrown;text-align: center;">Top 4. USS Oriskany - Pensacola, Florida</h2>
+    <p id="ss">
+        <img src="projectimages/USS1.jpg" id="ship" title="USS1" alt="USS" width=450 height=300>
+    </p>
+
+
+    <div>
+        <span class="title">Location</span>: Approximately 26.5 miles Southeast of Pensacola, Florida <br>
+        <span class="title">Basic Information</span>: The aircraft carrier was originally constructed as part of the war
+        effort, but after World
+        War II ended, the construction slowed down and did not start until 1947. After going though few redesigns, the
+        USS Oriskany earned two battle stars during the Korean war and five stars during the Vietnam War. On may
+        17,2006, the world's largest
+        intentionally-created artificial reef was sunk near Pensacola, Florida. Since then, the wreck has become a
+        habitat for diverse species of marine lives. Diving at this site is challenging due to strong currents and
+        depth. <br>
+        <img src="projectimages/Oriskany-Dive-Depths.jpg" alt="depth" title="oriskany" width=450 height=300> <br>
+        <span class="title">Marine Life</span>: small tropical fish like blennies, damselfish and angelfish to large
+        game fish like snapper, grouper
+        and amberjack. <br>
+        <span class="title">difficulty</span>: advanced or Deep Diver Specialty Certification needed <br>
+    </div>
 </body>
+
 </html>

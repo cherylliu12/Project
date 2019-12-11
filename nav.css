@@ -1,0 +1,33 @@
+body{
+background-color:rgb(183, 210, 233);
+margin: 0;
+}
+h1 {
+    text-align: left;
+    margin-left: 20px;
+    font-weight: bold;
+    color: #0077be;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+background-color:#137CBB;
+overflow:hidden;
+text-align:center;
+padding: 30px;
+}
+a.nv{
+text-decoration: none;
+font-size: 25px;
+padding-left:40px;
+padding-right: 40px;
+color: #95D8EB;
+font-family: 'Courier New', Courier, monospace;
+font-weight: bold;
+}
+nav a:hover{
+background-color:white;
+color: cadetblue;
+}
+hr {
+    margin: 50px;
+}
